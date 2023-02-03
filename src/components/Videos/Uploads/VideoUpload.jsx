@@ -20,7 +20,6 @@ const VideoUpload = () => {
             <Input
               required
               type={'file'}
-              w={['24', 'sm']}
               css={{
                 '&::file-selector-button': {
                   border: 'none',
