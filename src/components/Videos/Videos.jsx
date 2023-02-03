@@ -14,7 +14,12 @@ const Videos = () => {
   const [videoSrc, setVideoSrc] = useState(videosArr[0]);
   return (
     <Stack direction={['column', 'row']} h={'100vh'}>
-      <VStack w={'full'} alignItems={'flex-start'}>
+      <VStack
+        w={['-moz-fit-content', 'full']}
+        ml={[0, '4']}
+        mt={[0, '16']}
+        alignItems={'flex-start'}
+      >
         <video
           src={videoSrc}
           controls
@@ -22,10 +27,8 @@ const Videos = () => {
           autoPlay
           style={{
             width: '100%',
-            marginTop: '8%',
-            marginLeft: '2%',
-
             boxShadow: '-25px 24px 72px -54px rgba(56,55,56,1)',
+            borderRadius: ['12px'],
           }}
         ></video>
         <Heading> Sample Video 1</Heading>

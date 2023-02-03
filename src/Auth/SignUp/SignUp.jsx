@@ -27,12 +27,16 @@ const SignUp = () => {
         <form>
           <VStack
             alignItems={'stretch'}
-            w={['full', 'sm']}
+            w={['auto', 'sm']}
             spacing={'8'}
             m={'auto'}
             my={'16'}
           >
-            <Heading textTransform={'uppercase'} fontFamily={'Roboto Mono'}>
+            <Heading
+              m={['auto', 0]}
+              textTransform={'uppercase'}
+              fontFamily={'Roboto Mono'}
+            >
               Welcome to Movie World😋
             </Heading>
             <Input required type={'text'} placeholder={'Username'} />
