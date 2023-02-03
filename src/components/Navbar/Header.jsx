@@ -40,14 +40,43 @@ const Header = () => {
           <DrawerHeader>Video Hub</DrawerHeader>
           <DrawerBody>
             <VStack alignItems={'flex-start'}>
-              <Button
-                onClick={onClose}
-                colorScheme={'purple'}
-                variant={'ghost'}
-              >
-                <Link to="/">Home</Link>
-              </Button>
-              <Button
+              <Link to="/">
+                <Button
+                  onClick={onClose}
+                  colorScheme={'purple'}
+                  variant={'ghost'}
+                >
+                  Home
+                </Button>
+              </Link>
+              <Link to="/videos">
+                <Button
+                  onClick={onClose}
+                  colorScheme={'purple'}
+                  variant={'ghost'}
+                >
+                  Videos
+                </Button>
+              </Link>
+              <Link to="/videos?catogary=free">
+                <Button
+                  onClick={onClose}
+                  colorScheme={'purple'}
+                  variant={'ghost'}
+                >
+                  Free Videos
+                </Button>
+              </Link>
+              <Link to="/upload">
+                <Button
+                  onClick={onClose}
+                  colorScheme={'purple'}
+                  variant={'ghost'}
+                >
+                  Upload videos
+                </Button>
+              </Link>
+              {/* <Button
                 onClick={onClose}
                 colorScheme={'purple'}
                 variant={'ghost'}
@@ -67,7 +96,7 @@ const Header = () => {
                 variant={'ghost'}
               >
                 <Link to="/upload">Upload video</Link>
-              </Button>
+              </Button> */}
             </VStack>
 
             <HStack
