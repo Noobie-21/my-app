@@ -8,7 +8,6 @@ import {
   Button,
   HStack,
   Card,
-  Text,
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import React from 'react';
@@ -21,7 +20,14 @@ function Login() {
       //   p="16"
       //   filter={'blur(3px)'}
     >
-      <Card w={['84', 'lg']} m={'auto'} my={'28'} boxShadow={'dark-lg'}>
+      <Card
+        w={['84', 'lg']}
+        m={'auto'}
+        my={'28'}
+        cursor={'pointer'}
+        boxShadow="dark-lg"
+        transition={'all 0.6s'}
+      >
         <form>
           <VStack
             alignItems={'stretch'}
