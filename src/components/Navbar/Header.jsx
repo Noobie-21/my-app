@@ -76,27 +76,6 @@ const Header = () => {
                   Upload videos
                 </Button>
               </Link>
-              {/* <Button
-                onClick={onClose}
-                colorScheme={'purple'}
-                variant={'ghost'}
-              >
-                <Link to="/videos">Video</Link>
-              </Button>
-              <Button
-                onClick={onClose}
-                colorScheme={'purple'}
-                variant={'ghost'}
-              >
-                <Link to="/videos?category=free">Free Video</Link>
-              </Button>
-              <Button
-                onClick={onClose}
-                colorScheme={'purple'}
-                variant={'ghost'}
-              >
-                <Link to="/upload">Upload video</Link>
-              </Button> */}
             </VStack>
 
             <HStack
